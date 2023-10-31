@@ -1,0 +1,598 @@
+.container {
+  width: 100%;
+  position: relative;
+}
+
+.line {
+  width: 1fr;
+  height: 2px;
+  background-image: linear-gradient(to right,rgb(240, 48, 108),rgb(243, 137, 167));
+  border-bottom: 2px solid black;
+  position: relative;
+  animation: line 4s linear infinite;
+}
+
+@keyframes line 
+{
+    0% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    4% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(-1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    6% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    8% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    12% {clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    14% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    100% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+}
+
+
+.line:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-image: linear-gradient(to right,rgb(243, 137, 167), rgb(240, 48, 108));
+  transform: rotate(45deg);
+  right: -34px;
+  top: 14px;
+}
+
+.line2 {
+  width: 60vw;
+  height: 2px;
+  background-image: linear-gradient(to right,rgb(240, 48, 108),rgb(243, 137, 167), rgb(240, 48, 108));
+  border-bottom: 2px solid black;
+  position: relative;
+  animation: line2 4s linear infinite;
+}
+
+@keyframes line2 
+{
+    0% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    4% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(-1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    6% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    8% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    12% {clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    14% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    100% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+}
+.line2:after {
+  content: '';
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-image: linear-gradient(to right, rgb(240, 48, 108),rgb(243, 137, 167));
+  transform: rotate(-45deg);
+  right: -33px;
+  top: -14px;
+}
+
+.line3 {
+  width: 20vw;
+  height: 2px;
+  background-image: linear-gradient(to right,rgb(243, 137, 167), rgb(240, 48, 108));
+  border-bottom: 2px solid black;
+  position: relative;
+  animation: line3 4s linear infinite;
+}
+
+@keyframes line3
+{
+    0% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    4% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(-1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    6% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    8% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    12% {clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    14% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    100% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+}
+
+.borderMainImage{
+  width: 50%;
+  height: 86vh;
+  display: inline-block;
+  background-image: linear-gradient(rgb(240, 48, 108),rgba(240, 48, 109, 0.151));
+  border-radius: 1vw;
+}
+
+.mainImage{
+  width: 100px;
+  height: auto;
+  background-color: black;
+  border-radius: 1vw;
+  box-shadow: 2px 2px 2px rgba(243, 61, 92, 0.37);
+}
+
+
+.borderInfo{
+  width: 100%;
+  height: 86vh;
+  padding-left: 10px;
+  background-image: linear-gradient(rgb(240, 48, 108),rgba(8, 10, 35, 0));
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+.titleInfo{
+  background-color: rgba(8, 10, 35);
+  width: 97%;
+  height: 20vh;
+  
+  border: 1px solid rgb(240, 48, 108);
+  box-shadow: rgba(255, 255, 255, 0.274) 1px 1px 1px;
+
+}
+
+#titleInfo{
+    color:white;
+    font-size: 58px;
+    text-align: center;
+}
+
+.infoStatus{
+  
+  background-color: rgba(8, 10, 35);
+  width: 45vw;
+  height: 62vh;
+   border: 1px solid white;
+   border-bottom: 0px;
+  border-image-slice: 25%;
+  border-image-source: linear-gradient( rgba(248, 247, 247, 0.555), rgba(8, 10, 35, 0));
+  
+  
+}
+
+.info{
+  width: 42vw;
+  height: 23vh;
+
+}
+
+.infoText{
+  color: white;
+  font-size: 15px;
+  width: 10vw;
+  height: 10vh;
+  font-family:BlenderProBook;
+  animation: infoText 4s linear infinite;
+}
+
+@keyframes infoText
+{
+    0% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    2% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    4% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(-1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    6% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(1rem); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    8% {clip-path: polygon(0 40%, 0 100%, 100% 100%, 100% 40%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    12% {clip-path: polygon(0 10%, 0 40%, 100% 40%, 100% 10%); transform: translateX(0); text-shadow: var(--cyan) 1px 1px, var(--yellow) -1px -1px;}
+    14% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+    100% {clip-path: var(--og-clip-path); transform: translateX(0); text-shadow: none;}
+}
+
+@font-face 
+{
+    font-family:BlenderProBook;
+    font-style:normal;
+    font-weight:400;
+    src:url(fonts/BlenderProBook.woff2) format("woff2");
+}
+
+@font-face 
+{
+    font-family: Oxanium;
+    font-style: normal;
+    font-weight: 400;
+    src: url(fonts/Oxanium.woff2) format('woff2');
+}
+
+@font-face 
+{
+    font-family: Cyberpunk;
+    src: url(fonts/Cyberpunk.otf) format('opentype');
+}
+/*#endregion*/
+
+/*#region top level elements*/
+:root 
+{
+    --root-font-size: 18px;
+
+    --yellow: #f8ef02;
+    --cyan: #00ffd2;
+    --red: #ff003c;
+    --blue: #136377;
+    --green: #446d44;
+    --purple: purple;
+    --black: #000;
+    --white: #fff;
+    --dark: #333;
+
+    --fg: var(--black);
+    --bg: transparent;
+    --ac: var(--black);
+
+    --yellow-cyberpunk-font: #feef00;
+    --cyan-cyberpunk-font1:#46dffb;
+    --cyan-cyberpunk-font2:#45aefb;
+
+    --banner-color1: var(--purple); 
+    --banner-color2: var(--red);
+    --banner-color3: var(--yellow); 
+    --banner-color4: var(--cyan); 
+    --banner-gradient-stop: 405px;
+
+    --input-padding-top: 0px;
+    --input-padding-bot: 0.2rem;
+    --input-padding-left: 1rem;
+    --input-padding-right: 2rem;
+    --input-font-size: 1.2rem;
+    --input-width: 240px;
+
+    --checkbox-size: 28px;
+    --checkbox-inner-size: 16px;
+
+    --radio-size: 28px;
+    --radio-inner-size: 16px;
+}
+
+.oxanium-font
+{
+    font-family: Oxanium !important;
+}
+
+.cyberpunk-font,
+.cyberpunk-font *,
+.cyberpunk-font-og,
+.cyberpunk-font-og *
+{
+    font-family: Cyberpunk !important;
+    text-transform: uppercase !important;
+    letter-spacing: -.25em;
+}
+
+.cyberpunk-font-og,
+.cyberpunk-font-og *
+{
+    text-shadow: var(--cyan-cyberpunk-font1) 1px 1px, var(--cyan-cyberpunk-font2) 2px 2px;
+    color: var(--yellow-cyberpunk-font);
+}
+
+.cyberpunk-font .c,
+.cyberpunk-font-og .c
+{
+    font-style: normal;
+    font-size: 2em;
+    position: relative;
+    top: -.2em;
+}
+
+.cyberpunk-font .p,
+.cyberpunk-font-og .p
+{
+    font-style: normal;
+    font-size: 2em;
+    letter-spacing: -.45em;
+    position: relative;
+    bottom: -.25em;
+    left: -.15em;
+}
+
+.cyber-h
+{
+    display: block;
+    width: 60%;
+}
+
+.cyber-h::after
+{
+    content: ' ';
+    width: 100%;
+    height: 6px;
+    display: block;
+    background-color: white;
+    clip-path: polygon(0 0, 0 100%, 10% 100%, calc(10% + 4px) 2px, 100% 2px, 100% 0);
+}
+
+h1.cyber-h
+{
+    font-size: 3.0rem;
+    margin: 2.0rem 0;
+    width: 100%;
+}
+
+h2.cyber-h
+{
+    font-size: 2.5rem;
+    margin: 1.6rem 0;
+    width: 90%;
+}
+
+h3.cyber-h
+{
+    font-size: 2rem;
+    margin: 1.4rem 0;
+    width: 80%;
+}
+
+h4.cyber-h
+{
+    font-size: 1.5rem;
+    margin: 1.2rem 0;
+    width: 70%;
+}
+
+h5.cyber-h
+{
+    font-size: 1.0rem;
+    margin: 1.0rem 0;
+    width: 60%;
+}
+
+h6.cyber-h
+{
+    font-size: 1.0rem;
+    margin: 1.0rem 0;
+    font-weight: 400;
+    width: 60%;
+}
+
+.cyber-glitch-4
+{
+    animation: cyber-glitch-4 5s linear infinite;
+}
+
+@keyframes cyber-glitch-4 
+{
+    0% {visibility: visible;}
+    1% {visibility: hidden;}
+    2% {visibility: hidden;}
+    3% {visibility: visible;}
+
+    20% {visibility: visible;}
+    21% {visibility: hidden;}
+    24% {visibility: hidden;}
+    25% {visibility: visible;}
+
+    40% {visibility: visible;}
+    41% {visibility: hidden;}
+    42% {visibility: hidden;}
+    43% {visibility: visible;}
+
+    44% {visibility: visible;}
+    45% {visibility: hidden;}
+    46% {visibility: hidden;}
+    47% {visibility: visible;}
+
+    60% {visibility: visible;}
+    61% {visibility: hidden;}
+    64% {visibility: hidden;}
+    65% {visibility: visible;}
+
+    70% {visibility: visible;}
+    71% {visibility: hidden;}
+    72% {visibility: hidden;}
+    73% {visibility: visible;}
+    
+    100% {visibility: visible;}
+}
+.cyber-banner,
+.cyber-banner-short
+{
+    width: 80%;
+    height: 20px;
+    background-repeat: no-repeat;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 20px;
+    overflow: hidden;
+    font-family:BlenderProBook;
+    clip-path: polygon(0 0, 0 100%, calc(100% - 20px) 100%, 100% calc(100% - 20px), 100% 0);
+    
+    /*default: --purple --red --yellow --cyan*/
+    background: linear-gradient(90deg, var(--banner-color1), var(--banner-color2), var(--banner-color3), var(--banner-color4) var(--banner-gradient-stop));
+}
+
+.cyber-banner-short
+{
+    --banner-gradient-stop: 200px;
+}
+
+.cyber-banner.bg-yellow,
+.cyber-banner-short.bg-yellow
+{
+    --banner-color1: var(--cyan);
+    --banner-color2: var(--purple);
+    --banner-color3: var(--red);
+    --banner-color4: var(--yellow);
+}
+
+.cyber-banner.bg-purple,
+.cyber-banner-short.bg-purple
+{
+    --banner-color1: var(--red);
+    --banner-color2: var(--yellow);
+    --banner-color3: var(--cyan);
+    --banner-color4: var(--purple);
+}
+
+.cyber-banner.bg-red,
+.cyber-banner-short.bg-red
+{
+    --banner-color1: var(--yellow);
+    --banner-color2: var(--cyan);
+    --banner-color3: var(--purple);
+    --banner-color4: var(--red);
+}
+
+
+.cyber-banner::before,
+.cyber-banner-short::before
+{
+    content: " ";
+    height: inherit;
+    display: block;
+    float: left;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*
+Note: Inline svg shit doesnt work sometimes. Make sure to optimize it with https://jakearchibald.github.io/svgomg/ (import and download)
+*/
+.cyber-banner::before
+{
+    width: 350px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="405" height="50"><path d="M0 0v50h20L45 0zM47 0 22 50h28L75 0zM79 0 54 50h26l25-50zM111 0 86 50h24l25-50zM143 0l-25 50h22l25-50zM175 0l-25 50h20l25-50zM207 0l-25 50h18l25-50zM239 0l-25 50h16l25-50zM271 0l-25 50h14l25-50zM303 0l-25 50h12l25-50zM335 0l-25 50h10l25-50zM367 0l-25 50h8l25-50zM399 0l-25 50h6l25-50z"/></svg>');
+}
+
+.cyber-banner-short::before
+{
+    width: 20px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="220" height="50"><path d="m0 0-10 50h20L35 0zM37 0 12 50h18L55 0zM59 0 34 50h16L75 0zM81 0 56 50h14L95 0zM103 0 78 50h12l25-50zM125 0l-25 50h10l25-50zM147 0l-25 50h8l25-50zM169 0l-25 50h6l25-50zM191 0l-25 50h4l25-50zM213 0l-25 50h2l25-50z"/></svg>')
+}
+
+
+
+.progress-container {
+    width: 300px;
+    height: 20px;
+    background-color: #444;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.liquid-fill {
+    width: 150px;
+    height: 100%;
+    background-color: #00bcd4;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    animation: liquid-fill 2s ease-in-out infinite;
+    
+}
+@keyframes liquid-fill{
+   0%{ border-radius: 10px 10px 10px 10px;
+   }
+
+
+   80%{ border-radius: 10px 10px 10px 15px;
+   }
+
+   100%{ border-radius: 10px 10px 10px 10px;
+   }
+}
+
+.liquid-fill ::after{
+    width: 100px;
+    height: 50%;
+    background-color: #00bcd4;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    animation: liquid-fill 2s ease-in-out infinite;
+}
+
+#javascriptBar {
+    width: 50px;
+    height: 100%;
+    background-color: #00bcd4;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    animation: javascriptBar-fill 2s ease-in-out infinite;
+    
+}
+@keyframes javascriptBar-fill{
+   0%{ border-radius: 10px 10px 10px 10px;
+   }
+
+
+   80%{ border-radius: 10px 10px 10px 15px;
+   }
+
+   100%{ border-radius: 10px 10px 10px 10px;
+   }
+}
+
+
+
+#htmlBar {
+    width: 50px;
+    height: 100%;
+    background-color: #00bcd4;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    animation: htmlBar-fill 2s ease-in-out infinite;
+    
+}
+@keyframes htmlBar-fill{
+   0%{ border-radius: 10px 10px 10px 10px;
+   }
+
+
+   80%{ border-radius: 10px 10px 10px 15px;
+   }
+
+   100%{ border-radius: 10px 10px 10px 10px;
+   }
+}
+
+
+
+#cssBar {
+    width: 50px;
+    height: 100%;
+    background-color: #00bcd4;
+    border-radius: 10px 10px 10px 10px;
+    position: absolute;
+    animation: cssBar-fill 2s ease-in-out infinite;
+    
+}
+@keyframes cssBar-fill{
+   0%{ border-radius: 10px 10px 10px 10px;
+   }
+
+
+   80%{ border-radius: 10px 10px 10px 15px;
+   }
+
+   100%{ border-radius: 10px 10px 10px 10px;
+   }
+}
+
+
+
+
+
+.particle {
+    position: absolute;
+    background-color: #00bcd4;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    animation: particles 3s linear infinite;
+}
+
+@keyframes fill {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes particles {
+    0% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+}
+
+

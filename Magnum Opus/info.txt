@@ -1,0 +1,8 @@
+Olá a todos!
+Me chamo Felipe, atualmente tenho 24 anos, sou desenvolvedor, trabalho atualmente principalmente com JAVA, mas utilizo um pouco de JavaScript, CSS e HTML.
+Atualmente estou estudando JavaScript, CSS e HTML voltados para a parte de front-end e na parte de back-end estou estudando Spring.
+Já estudei C# e Delphi, porém não me identifiquei com as linguagens. Já trabalhei com MySql e Sql Server.
+Procuro sempre melhorar e sempre busco melhores oportunidades. Estou disposto a enfrentar qualquer desafio.
+Atualmente quero focar na área de full stack
+
+Oportunidades e propostas são bem vindas!
